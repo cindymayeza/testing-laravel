@@ -62,7 +62,7 @@ class EmployeesController extends Controller
         ]);
     }
 
-    public function fetch_id($id)
+    public function fetch_employee($id)
     {
         $data = Employees::where('id', $id)->first();
         if (!$data) {
